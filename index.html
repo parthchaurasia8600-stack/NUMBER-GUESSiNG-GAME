@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NUMBER GUESSiNG GAME</title>
+<link rel="icon" type="image/png" href="FEVICON.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🎯NUMBER GUESSiNG GAME</h1>
+    <button id="themeBtn" onclick="toggleTheme()">
+        🌙 DARK MoDE
+    </button>
+
+    <div class="difficulty">
+
+        <b><label>DiFFiCULTY LEVEL📈</label></b>
+        <br>
+        <select id="difficulty" onchange="changeDifficulty()">
+            <option value="50">Easy (1-50)</option>
+            <option value="100" selected>Medium (1-100)</option>
+            <option value="500">Hard (1-500)</option>
+        </select>
+    </div>
+
+    <p id="rangeText">Guess a NUMBER between <b>1 to 100</b></p>
+
+    <h3>❤️ Lives: <span id="lives">10</span></h3>
+    <h3>🎯 Attempts: <span id="attempts">0</span></h3>
+    <input type="number" id="guessInput" placeholder="Enter your guess">
+    <div class="buttons">
+        <button onclick="checkGuess()">GUESS</button>
+        <button onclick="restartGame()">RESTART</button>
+    </div>
+    <p id="message">BEST of LUCK👍🏻</p>
+    <footer>
+        <h3>-MADE BY PARTH CHAURASiA</h3>
+    </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

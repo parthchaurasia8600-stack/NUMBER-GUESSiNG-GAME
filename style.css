@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:linear-gradient(135deg,#00c6ff,#ff5100);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    transition:.4s;
+}
+
+.container{
+    width:415px;
+    background:white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(50,40,50,.25);
+    transition: .9s;
+}
+
+.container:hover{
+    transform:scale(1.05);
+}
+
+h1{
+    margin-bottom:20px;
+    color:#333;
+}
+
+#themeBtn{
+    margin-bottom:20px;
+    background:#222;
+}
+
+.difficulty{
+    margin-bottom:20px;
+}
+
+select{
+    width:50%;
+    padding:10px;
+    margin-top:10px;
+    border-radius:8px;
+    font-size:16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+input{
+    width:50%;
+    padding:12px;
+    margin:20px 0;
+    font-size:18px;
+    border-radius:8px;
+    border:2px solid #ccc;
+    text-align: center;
+}
+
+.buttons{
+    display:flex;
+    gap:10px;
+}
+
+button{
+    flex:1;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    color:white;
+    background:#007bff;
+    font-size:16px;
+    transition:.5s;
+}
+
+button:hover{
+    transform:scale(1.05);
+    background:#0056d2;
+}
+
+#message{
+    margin-top:25px;
+    font-size:22px;
+    font-weight:bold;
+    min-height:40px;
+}
+
+footer{
+    text-align: end;
+    padding-top: 30px;
+}
+
+.dark{
+    background:linear-gradient(135deg,#255c6b,#913e18);
+}
+.dark .container{
+    background:#222;
+    color:white;
+}
+
+.dark #themeBtn{
+    margin-bottom:20px;
+    color: black;
+    background:#44aba4;
+}
+
+.dark input,
+.dark select{
+    background:#333;
+    color:white;
+    border:1px solid #666;
+}
+
+.dark button{
+    background:#a76c28;
+}
+
+.dark button:hover{
+    background:#7d471d;
+}
+
+.dark h1{
+    color: #ccc;
+}
