@@ -40,10 +40,10 @@ function checkGuess(){
 
     if(guess===secretNumber){
 
-        message.style.color="darkorange";
+        message.style.color="orange";
 
         message.innerHTML=
-        `🎉 Congratulations!<br>You guessed the number<br>in ${attempts} Attempts`;
+        `🎉 Congratulations!<br>You guessed the Number in ${attempts} Attempts`;
 
         confetti({
 
