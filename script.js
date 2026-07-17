@@ -40,7 +40,7 @@ function checkGuess(){
 
     if(guess===secretNumber){
 
-        message.style.color="orange";
+        message.style.color="darkorange";
 
         message.innerHTML=
         `🎉 Congratulations!<br>You guessed the number<br>in ${attempts} Attempts`;
