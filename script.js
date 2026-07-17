@@ -43,7 +43,7 @@ function checkGuess(){
         message.style.color="orange";
 
         message.innerHTML=
-        `🎉 Congratulations!<br>You guessed ${secretNumber}<br>in ${attempts} Attempts`;
+        `🎉 Congratulations!<br>You guessed the number<br>in ${attempts} Attempts`;
 
         confetti({
 
