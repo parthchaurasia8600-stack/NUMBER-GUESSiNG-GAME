@@ -210,15 +210,6 @@ footer{
         font-size:13px;
     }
 
-    /* button:hover{
-        transform:scale(1.05);
-        background:#0056d2;
-    }
-
-    .dark button:hover{
-        background:#7d471d;
-    } */
-
     .container:hover{
         transform: none;
     }
