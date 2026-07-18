@@ -124,8 +124,7 @@ footer{
     background:#44aba4;
 }
 
-.dark input,
-.dark select{
+.dark input,.dark select{
     background:#333;
     color:white;
     border:1px solid #666;
@@ -209,6 +208,15 @@ footer{
         padding-top:15px;
         text-align:right;
         font-size:13px;
+    }
+
+    button:hover{
+        transform:scale(1.05);
+        background:#0056d2;
+    }
+
+    .dark button:hover{
+        background:#7d471d;
     }
 
     .container:hover{
