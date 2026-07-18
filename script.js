@@ -43,7 +43,7 @@ function checkGuess(){
         message.style.color="orange";
 
         message.innerHTML=
-        `🎉 CONGRATULATiONs!<br>You Guessed ${secretNumber} in ${attempts} Attempts`;
+        `🎉 CONGRATULATiONs!<br>You guessed ${secretNumber} in ${attempts} Attempts`;
 
         confetti({
 
@@ -51,7 +51,7 @@ function checkGuess(){
 
             spread:150,
 
-            origin:{y:0.6}
+            origin:{y:0.8}
 
         });
 
@@ -96,6 +96,8 @@ function disableGame(){
 
     document.getElementById("guessInput").disabled=true;
 
+    document.getElementById("guessBtn").disabled=true;
+
 }
 
 function restartGame(){
@@ -110,11 +112,15 @@ function restartGame(){
 
     document.getElementById("lives").innerHTML=10;
 
-    document.getElementById("message").innerHTML="";
+    document.getElementById("message").innerHTML="BEST of LUCK👍🏻";
 
     document.getElementById("guessInput").value="";
 
     document.getElementById("guessInput").disabled=false;
+
+    document.getElementById("guessBtn").disabled=false;
+
+    document.getElementById("guessInput").focus();
 
 }
 
